@@ -1,4 +1,4 @@
-##############3 TASK 1 #############
+############## TASK 1 #############
 var_1 = input('Please enter the first number: ')
 var_2 = input('Please enter the second number: ')
 print(type(var_1))
@@ -11,3 +11,187 @@ difference = var_3 - var_4
 print("Sum =", total)
 print("Product =", product)
 print("Difference =", difference)
+
+
+################### TASK2 ##############
+import math 
+radius  = float(input("Please enter the radius value:")) 
+area = math.pi * radius ** 2 
+print("Area is:", area)
+area = math.pi * math.pow(radius, 2)
+print("Area is:", area)
+area = math.pi * radius * radius
+print("Area is:", area)
+
+c = 2*math.pi*radius
+print("circumference:",c)
+
+
+#################### TASK3 ##################
+num1 = int(input("Enter a number: "))
+num2 = int(input("Enter another number: "))
+
+if num1 > num2:
+    print("First is greater")
+elif num2 > num1:
+    print("Second is greater")
+else:
+    print("The numbers are equal")
+
+################## TASK4 ########################
+num1 = int(input("Enter a number: "))
+num2 = int(input("Enter another number: "))
+
+if num2 > num1:
+    print(num2 - num1)
+else:
+    print(num1 - num2)
+
+################# TASK5 #########################
+num = int(input("Enter a number: "))
+
+
+if (num%2 == 0):
+   print("The number is even" ) 
+else:
+    print("The number is odd" )
+
+##################### TASK6 #####################
+num = int(input("Enter a number: "))
+
+if num%2 == 0 or num%5 == 0:
+    print(num)
+else:
+    print("Not a multiple of 2 OR 5")
+
+################# TASK7 ######################
+num = int(input("Enter a number: "))
+
+if (num%2 == 0 and num%5 != 0):
+    print(num)
+elif (num%2 == 0 or num%5 == 0):
+    print("Multiple of 2 and 5 both")
+else:
+    print("Not a multiple we want")
+
+################# TASK8 ###################
+num = int(input("Enter a number: "))
+
+if (num%2 == 0 and num%5 == 0):
+    print("num")
+else:
+    print("Not multiple of 2 and 5 both")
+
+################ TASK9 ###################
+sec = int(input("Seconds"))
+
+hours = sec // 3600
+minutes = sec % 3600 // 60
+seconds = sec % 60
+
+print("Hours:",hours, end =" ")
+print("Minutes:",minutes, end =" ")
+print("Seconds:",seconds, end =" ")
+
+############### TASK10 ####################
+hour=int(input("Enter total hour: "))
+
+if 0<hour<=40:
+    salary=hour*200
+    print(salary)
+elif hour>40 and hour<=168:
+    salary = 8000+(hour-40)*300 
+    print(salary)
+elif hour>168:
+    print("Impossible to work more than 168 hours weekly")
+    
+else:
+    print("hours can not be negetive")
+
+################### TASK11 #######################
+s = int(input("Enter a num: "))
+
+if s<100:
+    L=(3000-(125*s**2))
+    print(L)
+else:
+    L=(12000/(4+(s**2/14900)))
+    print(L)
+
+############## TASK12 ################
+hours=int(input("Time: "))
+
+if 0 <= hours <= 23:
+    if 4 <= hours <= 6:
+        print("Breakfast")
+    elif 12 <= hours <= 13:
+        print("Lunch")
+    elif 16 <= hours <= 17:
+        print("Snacks")
+    elif 19<= hours <= 20:
+        print("Dinner")
+    else:
+        print("Patience is a virtue")
+else:
+    print("Wrong time")
+
+################### TASK13 ###############
+studentMarks=int(input("Enter marks"))
+
+if 0<=studentMarks<=100:
+    if 90<=studentMarks<=100:
+        print("A")
+    elif 80<=studentMarks<=89:
+        print("B")
+    elif 70<=studentMarks<=79:
+        print("C")
+    elif 60<=studentMarks<=69:
+        print("D")
+    elif 50<=studentMarks<=59:
+        print("E")
+    else:
+        print("F")
+else:
+    print("invalid")
+
+
+################## TASK14 ###############
+f=int(input("Temperature in F: "))
+c=(f-32)*0.56
+print(c, "degrees C")
+if c<20:
+    print("Winter")
+elif 20<=c<=25:
+    print("Autumn")
+elif 25<c<30:
+    print("Spring")
+else:
+    print("Summer")
+
+
+#################### TASK15 #################
+d=int(input("Enter distance in meters: "))
+t=int(input("Enter time in seconds: "))
+velocity=(d/1000)/(t/3600)
+print(velocity, "km/h")
+if velocity<60:
+    print("Too slow. Needs more changes")
+elif 60<=velocity<=90:
+    print("Velocity is okay. The car is ready!")
+else:
+    print("Too fast. Only a few changes should suffice.")
+
+################### TASK16 ###################
+cgpa=float(input("Enter CGPA: "))
+credits=int(input("Enter credits: "))
+if credits>=30:
+    if 3.80<=cgpa<=3.89:
+        print("The student is eligible for a waiver of 25 percent")
+    elif 3.90<=cgpa<=3.94:
+        print("The student is eligible for a waiver of 50 percent")
+    elif 3.95<=cgpa<=3.99:
+        print("The student is eligible for a waiver of 3.9375 percent")
+    else:
+        print("100 percent")
+else:
+    print("The students is not eligible for a waiver")
