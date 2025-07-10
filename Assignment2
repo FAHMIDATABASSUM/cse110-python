@@ -1,1 +1,83 @@
+############################ TASK1(a) ########################
+counter = 24
+while counter >= -6:
+    if counter ==-6:
+        print(counter, end = "")
+    else:
+        print(counter, end = ", ") 
+     
+    counter = counter - 6 #updating loop counter
+
+
+############ TASK1(b) ##################
+for i in range (-10,21,5):
+    if i == 20:
+        print(i, end = "")
+    else:
+        print(i, end =", ")
+
+
+################## TASK1(c) #############
+for i in range (18,64,9):
+    if i == 63:
+        print(i, end = "")
+    else:
+        print(i, end =", ")
+
+
+############### TASK1(d) #################
+print(5 * (-1))
+print("-" + str(5))
+
+#################### TASK2 ###############
+car= str(input("Enter the name of your favorite car: "))
+time= int(input("Enter a Number: "))
+for i in range(time):
+    print(car)
+
+############## TASK3 ####################
+number=0
+sum=0
+while number<=600:
+    if number%7==0 and number%9==0:
+        sum=sum+number
+    number=number+1
+print(sum)
+
+############ TASK4 ##############
+#Todo
+number=0
+sum=0
+while number<=600:
+    if number%7==0 or number%9==0:
+        sum=sum+number
+    number=number+1
+print(sum)
+
+############## TASK5 ###############
+#Todo
+number=0
+sum=0
+while number<=600:
+    if number%7==0 and number%9!=0 or number%9==0 and number%7!=0:
+        sum=sum+number
+    number=number+1
+print(sum)
+
+
+############## TASK6 ############
+############## TASK7 ############
+############## TASK8 ############
+############## TASK9 ############
+############## TASK10 ############
+############## TASK11 ############
+############## TASK12 ############
+############## TASK13 ############
+############## TASK14 ############
+############## TASK15 ############
+############## TASK16 ############
+############## TASK17 ############
+############## TASK18 ############
+############## TASK19 ############
+############## TASK20 ############
 
