@@ -66,18 +66,170 @@ print(sum)
 
 
 ############## TASK6 ############
+for i in range(11,51,2):
+        print(i,end=' ')
+
 ############## TASK7 ############
+n=int(input('Enter a number: '))
+sum=0
+for y in range(1,n+1):
+    if y%2==0:
+        sum-=y**2
+    else:
+        sum+=y**2
+print(sum)
+
 ############## TASK8 ############
+total=0
+counter=0
+for i in range (10):
+    num=int(input("Enter ten numbers: "))
+    if num%2==1:
+        counter=counter+1
+        total=total+num
+average=total/counter
+print("The total of the odd numbers is" ,total, "and their average is" ,average)
+
 ############## TASK9 ############
+sum=0
+n=int(input("Enter a number: "))
+for i in range(1,n+1):
+    if i%7==0:
+        sum+=i
+print(sum)
+
 ############## TASK10 ############
+count=1
+sum=0
+while count <=5:
+    num=int(input("Enter five numbers: "))
+    sum=sum+num
+    print(sum)
+    count=count+1
+
 ############## TASK11 ############
+num=int(input("Enter a number: "))
+while num>0:
+    a=num%10
+    num=num//10
+    if num==0:
+        print(a)
+    else:
+        print(a,end=", ")
+
 ############## TASK12 ############
+count=0
+num=int(input("Enter a number: "))
+while num>0:
+    num=num//10
+    count+=1
+print(count)
+
 ############## TASK13 ############
+num=int(input('Enter a number: '))
+x=int(num)
+count=0
+for i in range(num):
+    num=num//10
+    count+=1
+    if num==0:
+        break
+a=10**(count-1)
+for j in range(x):
+    m=(x//a)
+    x=x%a
+    if x!=0:
+        print(m,end=",")
+    else:
+        print(m)
+    a=a//10
+    if x==0:
+        break
+
 ############## TASK14 ############
+c=0
+n=int(input("Enter number:"))
+for  i in range (1,n+1):
+    if 6%i==0:
+        c+=1
+        if n==i:
+            print(n,end='')
+        else:
+            print(i,end=", ")
+print()
+print('Total',c,'divisors')
+
 ############## TASK15 ############
+num=int(input("Enter a number: "))
+sum=0
+for i in range (1,num):
+    if num%i==0:
+        if i==num:
+            break
+        else:
+            sum+=i
+if num==sum:
+    print(num, "is a perfect number")
+else:
+    print(num,"is not a perfect number")
+        
 ############## TASK16 ############
+num=int(input("Enter a number: "))
+count=0
+for i in range (1,num):
+    if num%i==0:
+        count+=1
+if count==1:
+    print(num,"is a prime number")
+else:
+    print(num,"is not a prime number")
+
 ############## TASK17 ############
+q=int(input('How many numbers: '))
+count=0
+sum=0
+while count<q:
+    n=int(input("Enter num: "))
+    if count==0:
+        maximum=n
+        minimum=n
+    if n>maximum:
+        maximum=n
+    if n<minimum:
+        minimum=n
+    count+=1
+    sum=sum+n
+average=sum/q
+print("Maximum",maximum)
+print("Minimum",minimum)
+print("Average is",average)
+
 ############## TASK18 ############
+c=int(input("Enter the number: "))
+for x in range (1,c+1):
+    for y in range (1,c+1):
+        if y <=x:
+            print('+',end="")
+        else:
+            print('+',end="")
+    print()
+
 ############## TASK19 ############
+r=int(input("Lines: "))
+c=int(input("Column: "))
+for i in range (1,r+1):
+    for k in range (1,c+1):
+        print(k, end="")
+    print()
+    
 ############## TASK20 ############
+r=int(input("Lines: "))
+space=r-1
+for i in range (1,r+1):
+    for s in range (space):
+        print(" ",end="")
+    for c in range (1,i+1):
+         print(c,end="")
+    print()
+    space-=1
 
